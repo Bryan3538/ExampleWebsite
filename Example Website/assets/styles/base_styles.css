@@ -1,0 +1,165 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Oxygen:400,700);
+
+header [role="banner"]{
+    width: 100%;
+    display: block;
+    margin: 5px auto 20px auto;
+    border-bottom: 4px double #f00;
+}
+
+html, body { 
+	min-height: 100%;
+	margin: 0;
+}
+
+body {
+	background-image: url(../img/checkers.png);
+	background-repeat: repeat;
+	/*background: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 23.32% , rgba(216,0,2,1.00)),color-stop( 100% , rgba(136,0,0,1.00)));
+	background: -webkit-linear-gradient(270deg,rgba(216,0,2,1.00) 23.32%,rgba(136,0,0,1.00) 100%);
+	background: linear-gradient(180deg,rgba(216,0,2,1.00)*/ 
+	min-width: 450px;
+	background-color: #A00;
+	font: normal 16px/1.5 'Oxygen', sans-serif;
+}
+
+#main {
+	background-color: white;
+	width: 80%;
+	max-width: 1024px;
+	display: block;
+	margin: 0 auto;
+	outline: 25px solid #222; /* banner blue = #3053c4 */
+	border: 15px solid white;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #900;
+}
+
+#content > h2, #content > h3 {
+    margin-top: 30px;
+}
+
+a {
+	color: #e00;
+}
+
+a:visited {
+	color: #a00;
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 4px double #f00;
+    clear: both;
+}
+
+footer p {
+	font-style: italic;
+	font-size: small;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h3 {
+	margin: 0;
+}
+
+figure {
+	width: 30%;
+	display: block;
+	float: right;
+	border: 3px dashed #b00;
+	padding: 1%;
+}
+
+figure img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-height: 300px;
+	margin-bottom: 2.5%;
+}
+
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
+
+address {
+	margin: 30px;
+}
+
+/** {
+	-moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}*/
+
+#google_map {
+	text-align: center;
+	float: right;
+	display: block;
+	width: 40%;
+	margin: 0 20px 20px 0;
+}
+
+#google_map img {
+	display: block;
+	margin: 5px auto;
+	width: 95%;
+	float: right;
+}
+
+#contact_info {
+	display: block;
+	float: left;
+	width: 55%;
+}
+
+@media screen and (max-width: 850px) {
+	h3 {
+		font-size: 1.3em;
+	}
+
+	figure {
+		width: 30%;
+		margin: 1em;
+	}
+
+
+	body {
+		font-size: 14px;
+	}
+	
+	#contact_info {
+		clear: both;
+		width: 100%;
+	}
+	
+	#google_map {
+		float: left;
+		clear: both;
+		width: 100%;
+	}
+	
+	#google_map img {
+		max-width: 270px;
+		max-height: 270px;
+		float: none;
+		margin: 25px auto -1em auto;
+	}
+}

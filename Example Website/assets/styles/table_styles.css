@@ -1,0 +1,93 @@
+/* Special bordered table */
+#package_table {
+	width: 95%;
+	margin: 0 auto;
+}
+
+#package_table th[scope=col] div {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 2px solid black;
+	padding: 5px;
+}
+
+#package_table th[scope=row] div {
+	border-top: 1px solid black;
+	border-right: 2px solid black;
+	border-bottom: 1px solid black;
+	padding: 5px;
+}
+
+#package_table .package_content > td > div {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#package_table .package_content > td > div > img{
+	display: block;
+	margin: 0 auto;	
+}
+
+#package_table td:nth-child(2)>div {
+	border-left: none;
+}
+
+#package_table td:last-child>div {
+	border-right: 2px solid black;
+}
+
+#package_table tr:nth-child(2)>th>div {
+	border-top: 2px solid black;
+}
+
+#package_table tr:last-child>th>div {
+	border-bottom: 2px solid black;
+}
+
+#package_table tr:first-child th:nth-child(2)>div {
+	border-left: 2px solid black;
+	color: #9e7b00;
+}
+
+#package_table tr:first-child th:nth-child(3)>div {
+	color: #bbbbad;
+}
+
+#package_table tr:first-child th:last-child>div {
+	border-right: 2px solid black;
+	color: #c9c200;
+}
+
+
+/* Table with row and column spans */
+#emp_info {
+	margin: 25px auto;
+	border: 1px solid #900;
+}
+
+#emp_info td {
+	padding: 8px;
+}
+
+#emp_info th[scope=row] {
+	width: 30%;
+	color: red;
+	background-color: white;
+}
+
+#emp_info th[scope=row] img {
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+	width: 94px;
+}
+
+#emp_info .divisor {
+	height: 7px;
+	padding: 0;
+	background-color: #900;
+}
+
+#emp_info .banded {
+	background-color: #f99;
+}

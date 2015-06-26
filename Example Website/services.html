@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Sterling Auto Care - Services</title>
+    <link href="assets/styles/base_styles.css" rel="stylesheet" type="text/css" />
+    <link href="assets/styles/menu_style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/styles/accordion_styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="assets/scripts/accordion.js"></script>
+</head>
+<body onLoad="initAccordion()">
+    <div id="main">
+        <header>
+            <h1 class="hidden">Sterling Auto Care</h1>
+            <img src="assets/img/banner.png" alt="Banner" usemap="#logoMap" id="logo" role="banner" />
+            <map name="logoMap">
+              <area shape="rect" coords="109,40,892,164" href="index.html" target="_top" alt="">
+            </map>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="contact.html">Contact<img id="dropdown_arrow" src="assets/img/dropdown-arrow.png" alt=""></a>
+                	<!-- Dropdown Menu -->
+                    <ul>
+                    	<li><a href="contact.html">Location &amp; Contact Info</a></li>
+                        <li><a href="email.html">Email Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        
+
+        <section id="content">  
+            <div id="services">
+                <h2>What we can do for you</h2>
+                <p>
+                      We offer everything from complete engine overhauls to basic preventative maintenance and everything in between.
+                      Take a look below to find out how we can begin helping you today!
+                </p>
+                <div id="accordion_frame">
+    				<div class="accordion_header" id="sec1" onClick="toggleContent(this)"><h3>Preventative Maintenance</h3></div>
+                    <div class="accordion_content" id="sec1_content">
+                        <figure>
+                            <img src="assets/img/oil_change.jpg" alt="A simple oil change">
+                            <figcaption>Don't forget to change your oil!</figcaption>
+                        </figure>
+                        <p>
+                            A vehicle needs constant maintenance in order to keep running in peak condition and keep getting you from A to B. Whether yours needs an oil change, drivetrain lubrication, or anything in between, we can help you take care of it. Let us keep your vehicle working as long and as hard as you do.
+                        </p>
+                    </div>
+                    <div class="accordion_header" id="sec2" onClick="toggleContent(this)"><h3>Engine Diagnostics and Repair</h3></div>
+                    <div class="accordion_content" id="sec2_content">
+                        <figure>
+                            <img src="assets/img/engine_repair.jpg" alt="Serious engine repairs">
+                            <figcaption>Giving an engine some much needed love.</figcaption>
+                        </figure>
+                        <p>
+                            Sometimes a simple oil change isn’t enough and some serious diagnostics are needed. Hearing strange noises while driving? Seeing fluids in your driveway? Is your vehicle failing to start at all? Allow our professional technicians to work their magic and figure out what’s wrong. Regardless of whether you need a simple part replacement or a complete engine overhaul, our technicians can get your vehicle back to running as good as new.
+                        </p>
+                    </div>
+                    <div class="accordion_header" id="sec3" onClick="toggleContent(this)"><h3>Brakes and Suspension</h3></div>
+                    <div class="accordion_content" id="sec3_content">
+                        <figure>
+                            <img src="assets/img/brake_repair.jpg" alt="Servicing some brakes">
+                            <figcaption>Keep yourself safe: get your brakes checked today!</figcaption>
+                        </figure>
+                        <p>
+                            Hear a clunk every time you hit a bump? Does your vehicle no longer stop as well as it used to? Has the ride become more uncomfortable over the past couple months? Our technicians can tackle everything from simple fluid leaks, to brake replacement and repair, to repairing your suspension from the ground up. Allow us to keep your vehicle driving like new again with as few headaches as possible.
+                        </p>
+                    </div>
+                    <div class="accordion_header" id="sec4" onClick="toggleContent(this)"><h3>Electrical</h3></div>
+                    <div class="accordion_content" id="sec4_content">
+                        <figure>
+                            <img src="assets/img/electrical.jpg" alt="Computer Diagnostics">
+                            <figcaption>Using electrical diagnostic tools to troubleshoot the most stubborn problems.</figcaption>
+                        </figure>
+                        <p>
+                            Equipped with high-tech electronic diagnostic tools and several decades of combined experience, our technicians can troubleshoot everything from a faulty radio to a malfunctioning computer control system. So regardless of whether you want your vehicle to run like new again or wish to give it that little extra something, we can handle all of you and your vehicle’s electrical needs.
+                        </p>
+                    </div>
+                    <div class="accordion_header" id="sec6" onClick="toggleContent(this)"><h3>Heating and Air Conditioning</h3></div>
+                    <div class="accordion_content" id="sec6_content">
+                        <figure>
+                            <img src="assets/img/acrecharge.jpg" alt="Air conditioning recharge">
+                            <figcaption>Stay cool this summer, recharge your vehicle's air conditioning today!</figcaption>
+                        </figure>
+                        <p>
+                            Nothing says fun like having to drive to work while either freezing or roasting. Don’t let a simple thermostat replacement or air conditioning recharge stop you from being comfortable in your own vehicle once more. Our technicians can have you toasty warm or refreshingly cool in less time than it takes for your daily commute.
+                        </p>
+                    </div>
+                    <div class="accordion_header" id="sec7" onClick="toggleContent(this)"><h3>Transmission</h3></div>
+                    <div class="accordion_content" id="sec7_content">
+                        <figure>
+                            <img src="assets/img/transmission.jpg" alt="Repairing a transmission">
+                            <figcaption>Don't let transmission problems bring you to a halt.</figcaption>
+                        </figure>
+                        <p>
+                            Our technicians here at Sterling Auto Care are certified to handle everything from a simple transmission tune-up to a complete transmission replacement to tuning your transmission for higher performance. Your vehicle’s transmission is a vital piece of equipment that is often associated with a lot of headaches and an empty wallet. The next time you’re experiencing transmission problems in your vehicle allow our certified professionals get you back up and running with as little headaches and cost as possible.
+                        </p>
+                    </div>
+                    <div class="accordion_header" id="sec8" onClick="toggleContent(this)"><h3>4-Wheel Drive Truck</h3></div>
+                    <div class="accordion_content" id="sec8_content">
+                        <figure>
+                            <img src="assets/img/4wdtruck.png" alt="Four wheel drive truck repair">
+                            <figcaption>Let us keep your work horse running longer and working harder.</figcaption>
+                        </figure>
+                        <p>
+                            Born from a combination of professional experience and a passion for trucks, Sterling Auto Care offers some of the best 4-wheel drive truck services around. Regardless of whether your truck needs basic maintenance and repairs or if you just want it to go further and haul more than it ever could, we can take care of you. Visit us today and let us make your truck perform better than it did from the showroom floor. While you’re here, don’t forget to check out some of the technician’s own trucks; they never mind showing them off!
+                        </p>
+                    </div>
+
+                    <p>
+                        Don’t see a service that you’re looking for? Don’t worry, it’s impossible to list everything we can do on a simple web page. Feel free to 
+                        <a href="contact.html">contact us</a> today and we will do everything in our power to get your vehicle running like new again!
+                    </p>
+                  </div>
+              </div>
+        </section>
+        <footer>
+          <p>Copyright &copy; Sterling Auto Care 2013<br>
+          Site created by <a href="mailto:bryan3538@comcast.net">Bryan Fulton</a> |          Last update <!-- #BeginDate format:Am1 -->July 28, 2013<!-- #EndDate --><!-- #EndDate -->          </p>
+        </footer>
+    </div>
+</body>
+</html>

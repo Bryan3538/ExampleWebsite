@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8" >
+	<title>Sterling Auto Care - Email Us</title>
+	<link href="assets/styles/base_styles.css" rel="stylesheet" type="text/css" />
+    <link href="assets/styles/menu_style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/styles/contact-form-style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <div id="main">
+        <header>
+            <h1 class="hidden">Sterling Auto Care</h1>
+            <img src="assets/img/banner.png" alt="Banner" usemap="#logoMap" id="logo" role="banner" />
+            <map name="logoMap">
+              <area shape="rect" coords="109,40,892,164" href="index.html" target="_top" alt="">
+            </map>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="contact.html">Contact<img id="dropdown_arrow" src="assets/img/dropdown-arrow.png" alt=""></a>
+                	<!-- Dropdown Menu -->
+                    <ul>
+                    	<li><a href="contact.html">Location &amp; Contact Info</a></li>
+                        <li><a href="email.html">Email Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section id="content">
+            <h2>Email Us</h2>
+                <p>
+                    Have questions, comments, or concerns? Feel free to send us an email anytime and we will
+                    get back with you as soon as possible. Normally we will try to contact you by phone first, 
+                    but if you prefer otherwise please make note of it on the form. Before you fill it out, here
+                    are some things to remember:
+                </p>
+                <ul role="list">
+                    <li role="listitem">
+                        Type your email address and phone number <strong>very</strong> carefully. This way we can get back with you
+                        as quickly and easily as possible.
+                    </li>
+                    <li role="listitem">
+                        If you wish to be contacted by phone, you <strong>must</strong> provide a phone number!
+                    </li>
+                    <li role="listitem">
+                        Making an appointment must be handled over the phone or in person.
+                        If you're not sure how to reach us, visit our <a href="contact.html">Contact</a> page.
+                    </li>
+                </ul>
+             
+            <section id="form">
+                <!-- Email Form -->
+                <form id="email_form" name="email_form" method="post" onSubmit="showSuccessMessage()">
+      <table class="form_table">
+        <tr>
+          <th colspan="3" scope="col">Questions, concerns, or comments? Please email us them by filling out this form.</th>
+        </tr>
+        <tr>
+          <td><input name="required" type="hidden" id="required" value="first_name, last_name, email, message">
+          First Name*</td>
+          <td colspan="2">
+          <input name="first_name" type="text" id="first_name" form="email_form"></td>
+        </tr>
+        <tr>
+          <td>Last Name*</td>
+          <td colspan="2"><input name="last_name" type="text" id="last_name" form="email_form"></td>
+        </tr>
+        <tr>
+          <td>Email*</td>
+          <td colspan="2"><input name="email" type="text" id="email" form="email_form"></td>
+        </tr>
+        <tr>
+        	<td>Phone Number</td>
+            <td colspan="2"><input name="phone" type="text" id="phone" form="email_form">
+        </tr>
+        <tr>
+          <td>I write today in regards to:</td>
+          <td>
+          <input name="subject" type="checkbox" id="visit" form="email_form" value="visit">
+            <label>A previous visit</label>
+            <br>
+            <input name="subject" type="checkbox" id="services" form="email_form" value="services">
+            <label>Services offered</label>
+            <br>
+          </td>
+          <td>            
+            <input name="subject" type="checkbox" id="offers" form="email_form" value="offers">
+            <label>Special offers</label>
+            <br>
+            <input name="subject" type="checkbox" id="other" form="email_form" value="other">
+            <label>Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Preferred method of reply:</td>
+          <td colspan="2"><p>
+          <input name="reply" type="radio" id="reply_email" form="email_form" value="email" checked="checked">
+            <label>Phone</label>
+            <br>
+            <input name="reply" type="radio" id="reply_phone" form="email_form" value="phone">
+            <label>Email</label>
+            <br>
+          </p></td>
+        </tr>
+        <tr>
+          <td>I learned about you from:</td>
+          <td colspan="2"><select name="reference" id="reference" form="email_form">
+            <option value="none">Select from list:</option>
+            <option value="friend">From a friend</option>
+            <option value="website">Our website</option>
+            <option value="internet">Internet ad</option>
+            <option value="newspaper">Newspaper ad</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td><label>Your message:</label>&nbsp;</td>
+          <td colspan="2"><textarea name="message" rows="5" id="message" form="email_form"></textarea></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="2">
+		        <input name="submit" type="submit" id="submit" form="email_form" value="Submit">
+            <input name="reset" type="reset" id="reset" form="email_form" value="Reset">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">*Required fields</td>
+        </tr>
+      </table>
+    </form>
+          </section>
+     	</section>
+        <footer>
+          <p>Copyright &copy; Sterling Auto Care 2013<br>
+          Site created by <a href="mailto:bryan3538@comcast.net">Bryan Fulton</a> |          Last update <!-- #BeginDate format:Am1 -->July 28, 2013<!-- #EndDate --><!-- #EndDate -->          </p>
+        </footer>
+    </div>
+</body>
+</html>
